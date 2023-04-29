@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+.Details {
+  width: 100wh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  .details-card {
+    width: 85%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(10, 10, 46);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .movie-poster {
+      height: 100%;
+      width: 30%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .movie-about {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 60px 10px 30px;
+      .title {
+        padding: 10px 0;
+        font-family: 'Alkatra', cursive;
+      }
+      .year-rating-votes {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        div {
+          padding: 0 8px;
+          border-bottom: 1px solid white;
+          span {
+            font-weight: 700;
+            margin-left: 8px;
+          }
+        }
+      }
+      .genre {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px 0;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .writer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px 0;
+        font-weight: 600;
+        font-size: 18px;
+        span {
+          font-weight: 700;
+        }
+      }
+      .about {
+        padding: 10px 0;
+        max-height: 220px;
+        overflow: auto;
+        span {
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+        flex-shrink: 0;
+        button {
+          border: none;
+          padding: 10px 15px;
+          border-radius: 3px;
+          //   border: 1px solid white;
+          border: none;
+          color: white;
+          background-color: #ff6c37;
+          font-weight: 600;
+          font-size: 15px;
+          transition: background-color 0.2s ease-in;
+          &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: #ff6c37;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
